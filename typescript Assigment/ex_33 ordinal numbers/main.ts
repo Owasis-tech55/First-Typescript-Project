@@ -1,13 +1,16 @@
 
-let ordinalNumbers: Array<number> = [0,1,2,3,4,5,6,7,8,9];
-for(let val =0; val<ordinalNumbers.length ; val++) {
-    if(ordinalNumbers[val] === 1) {
-        console.log(`${val}st`)
-} else if( ordinalNumbers[val] === 2) {
-    console.log(`${val}nd`)
-}else if( ordinalNumbers[val] === 3) {
-    console.log(`${val}rd`)
+let users: Array<number> = [1,2,3,4,5,6,7,8,9];
+
+
+for(let i = 0 ; i<users.length ; i++) {
+        if(users[i] === 1) {
+        console.log(`${users[i]}st`)
+} else if(users[i] === 2){
+    console.log(`${users[i]}nd`)
+} else if(users[i] === 3){
+    console.log(`${users[i]}rd`)
 } else {
-    console.log(`${val}th`)
+    console.log(`${users[i]}th`)
 }
-};
+}
+
