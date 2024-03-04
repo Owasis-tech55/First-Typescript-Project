@@ -1,16 +1,16 @@
-var ordinalNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-for (var val = 0; val < ordinalNumbers.length; val++) {
-    if (ordinalNumbers[val] === 1) {
-        console.log("".concat(val, "st"));
+"use strict";
+let users = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (let i = 0; i < users.length; i++) {
+    if (users[i] === 1) {
+        console.log(`${users[i]}st`);
     }
-    else if (ordinalNumbers[val] === 2) {
-        console.log("".concat(val, "nd"));
+    else if (users[i] === 2) {
+        console.log(`${users[i]}nd`);
     }
-    else if (ordinalNumbers[val] === 3) {
-        console.log("".concat(val, "rd"));
+    else if (users[i] === 3) {
+        console.log(`${users[i]}rd`);
     }
     else {
-        console.log("".concat(val, "th"));
+        console.log(`${users[i]}th`);
     }
 }
-;
