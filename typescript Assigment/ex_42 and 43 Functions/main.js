@@ -15,3 +15,19 @@ function make_great(magician) {
 }
 show_magacians(arr_magician);
 make_great(arr_magician);
+//Method 2
+"use strict";
+let magicians = ["David Copperfield", "Houdini", "Dynamo"];
+let show_magicians = (magicians) => {
+    for (let magician of magicians) {
+        console.log(magician);
+    }
+};
+let make_great = (magicians) => magicians.map(magician => `${magician} the Great`);
+console.log("Original Magicians:");
+show_magicians(magicians);
+let great_magicians = make_great([...magicians]);
+console.log("Great Magicians:");
+show_magicians(great_magicians);
+console.log("Unchanged Magicians:");
+show_magicians(magicians);
