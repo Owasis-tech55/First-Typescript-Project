@@ -19,5 +19,28 @@ function make_great(magician: string[] ):any { let great_magaicians: string[] = 
    
 }
 
-show_magacians(arr_magician);
 make_great(arr_magician);
+
+show_magacians(arr_magician);
+
+//Method 2
+let magicians: string[] = ["David Copperfield",  "Houdini", "Dynamo"];
+
+let show_magicians = (magicians: string[]): void => {
+    for(let magician of magicians) {
+        console.log(magician);
+    }
+}
+
+let make_great = (magicians: string[]): string[] =>
+    magicians.map(magician => `${magician} the Great`);
+
+console.log("Original Magicians:");
+show_magicians(magicians);
+
+let great_magicians: string[] = make_great([...magicians]);
+console.log("Great Magicians:");
+show_magicians(great_magicians);
+
+console.log("Unchanged Magicians:");
+show_magicians(magicians);
