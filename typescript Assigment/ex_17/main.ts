@@ -1,9 +1,9 @@
 
 let guest_List: Array<string> = ["Maxwell", "Agar", "Smith", "Watson"];
-console.log("Due to a smaller dinner table, only two guest can be invited");
+guest_List.map((Elements) => console.log("Due to a smaller dinner table, only two guest can be invited"));
 
 for(let i=0; i<guest_List.length ;i++) {
-    if(guest_List.length >2 ) {
+    if(guest_List.length > 2 ) {
         let removedGuest = guest_List.pop();
         console.log(`Sorry,${removedGuest}, you are no longer invited at the dinner`);
     }
@@ -17,4 +17,3 @@ guest_List.pop();
 guest_List.pop();
 
 console.log(guest_List);
-
