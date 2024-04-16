@@ -1,5 +1,5 @@
 //Question#1
-var str = ("Messi");
+let str = "Messi";
 if (str === "Messi") {
     console.log("You guess the right player");
 }
@@ -14,21 +14,23 @@ else {
     console.log("you didn't guess the right player");
 }
 //Question#3
-var num = 55;
+let num = 55;
 if (num % 5 === 0) {
-    console.log("".concat(num, ", is the multiple of 5"));
+    console.log(`${num}, is the multiple of 5`);
 }
 else {
+    console.log(`${num}, not the multiple of 5`);
 }
 //Question#4
-var num2 = 79;
-if (num % 2 === 0) {
-    console.log("".concat(num, ", is av even integer"));
+let num2 = 79;
+if (num2 % 2 === 0) {
+    console.log(`${num2}, is av even integer`);
 }
 else {
+    console.log(`${num2}, not an even integer`);
 }
 //Question#5
-var grades = 56;
+let grades = 56;
 if (num >= 80) {
     console.log("A+");
 }
@@ -48,18 +50,19 @@ else {
     console.log("F");
 }
 //Question#6
-var anything_array = [23];
+let anything_array = [23];
 if (Array.isArray(anything_array)) {
-    console.log("anything_array , is an Array");
+    console.log(`anything_array , is an Array`);
 }
 else {
-    console.log("anything_array is not an array");
+    console.log(`anything_array is not an array`);
 }
 //Question#7
-var not_array = ("LALA");
+let not_array = "LALA";
 if (Array.isArray(not_array)) {
-    console.log("anything_array , is an Array");
+    console.log(`anything_array , is an Array`);
 }
 else {
-    console.log("anything_array is not an array");
+    console.log(`anything_array is not an array`);
 }
+export {};
