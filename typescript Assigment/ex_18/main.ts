@@ -11,4 +11,7 @@ print_places();
 
 console.log([...places].sort().reverse());
 
+console.log([...places].reverse());
+
+
 print_places();
